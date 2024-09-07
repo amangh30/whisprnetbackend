@@ -7,7 +7,7 @@ const app = express();
 const server = http.createServer(app);
 const io = socketIo(server, {
   cors: {
-    origin: "http://localhost:3000", // Replace with your client's URL
+    origin: "https://whisprnet.vercel.app/", // Replace with your client's URL
     methods: ["GET", "POST"]
   }
 });
