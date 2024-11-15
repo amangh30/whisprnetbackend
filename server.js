@@ -15,7 +15,6 @@ const io = socketIo(server, {
 // Use CORS middleware for Express (optional, as Socket.IO has its own CORS configuration)
 app.use(cors());
 
-// Example route
 app.get('/', (req, res) => {
   res.send('Socket.IO server with CORS is running');
 }); 
